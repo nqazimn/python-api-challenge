@@ -29,6 +29,7 @@ There are 2 main folders which contain the Jupyter notebooks prepared for analys
 2. The analysis of relationships between Latitude and weather conditions is performed in _/WeatherPy/WeatherPy_analysis.ipynb_. The analysis is performed for cities in Northern and Southern hemispheres for each of the four weather parameters mentioned above.
 3. Visualizations and recommendation for ideal vacation spots based on given weather conditions is performed in _/VacationPy/VacationPy_analysis.ipynb_.
 4. The generated images from analyses are exported as ```.png``` format and placed in _/Outputs/Images_ folder.
+5. The queried dataframe using OpenWeather API on Feb 01, 2020 is also included in _/Outputs/weather_df.csv_.
 ## Major findings
 
 **Maximum Temperature**:-
