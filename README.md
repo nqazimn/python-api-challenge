@@ -17,7 +17,7 @@ scipy
 matplotlib
 datetime
 os
-citipy (source: https://github.com/wingchen/citipy)
+citipy (source: [https://github.com/wingchen/citipy](https://github.com/wingchen/citipy))
 pycountry (source: https://pypi.org/project/pycountry/)
 gmaps
 ```
