@@ -1,5 +1,4 @@
 # Python-API-Challenge
-This repository contains my solution to HW-6 for **Data Visualization and Analytics Bootcamp**.
 ![gif_image](/Outputs/Images/10.Ideal_vacation_spots_02012020.PNG)
 ## Background
 There are essentially 3 main objectives:-
