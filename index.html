@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Weather vs. Latitude</title>
+
+    <!-- Bring in our bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+
+<body>
+    <div class="parent-container-navbar" id="navbar_container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <h5>Weather vs. Latitude</h5>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Home button ends here-->
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Visualizations
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Maximum Temperature</a>
+                            <a class="dropdown-item" href="#">Humidity</a>
+                            <a class="dropdown-item" href="#">Cloudiness</a>
+                            <a class="dropdown-item" href="#">Wind-speed</a>
+                        </div>
+
+                    </li> -->
+                    <!-- DROP DOWN MENU IS NOT WORKING - ADDING PAGES SEPARATELY-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/temperature_vs_latitude.html">Maximum Temperature</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/humidity_vs_latitude.html">Humidity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/cloudiness_vs_latitude.html">Cloudiness</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/windspeed_vs_latitude.html">Wind-speed</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/comparison.html">Comparison</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/data.html">Data</a>
+                    </li>
+
+
+
+                </ul>
+
+
+            </div>
+
+        </nav>
+        <!--Navigation bar ends here-->
+
+    </div> <!-- Navbar container ends here-->
+
+    <div class="parent-container d-flex">
+        <div class="container_right col-md-6" id="project_summary">
+            <div class="jumbotron">
+                <h1 class="display-5">How does weather vary with Latitude?</h1>
+                <p class="lead">This is a mock project built to practice Python requests, APIs and JSON traversals
+                    during
+                    <a href="https://bootcamp.umn.edu/data/" target="_blank"> Data Visualization and Analytics
+                        Bootcamp at the
+                        University of
+                        Minnesota, St. Paul.</a>
+                </p>
+                <hr class="my-1">
+                <p>
+                    There were three main objectives:-
+                    <ol>
+                        <li>Analyze the relationship between various weather parameters (<em>maximum temperature,
+                                humidity, cloudiness and wind-speed</em>) with Latitude.
+                        </li>
+                        </br>
+                        <li>
+                            Visualize the weather of 500+ cities using <a href="https://openweathermap.org/api"
+                                target="_blank">OpenWeatherMap</a> API using
+                            gmap heatmaps
+                        </li>
+                        </br>
+                        <li>
+                            Search for ideal vacation spots (based on certain weather conditions) using <a
+                                href="https://developers.google.com/places/web-service/intro" target="_blank">Google
+                                Places
+                                API</a>.
+                        </li>
+                    </ol>
+                </p>
+                <p>
+                    <h4 class="text-muted">Main observed trends</h4>
+                    <ul>
+                        <li>
+                            The maximum temperature decreases as distance from the equator increases. This is expected
+                            since South and North poles are expected to be very cold due to receiving minimum amount of
+                            light and heat from the sun.
+                        </li>
+                        <li>
+                            In general, there are no observable correlation between Humidity and Cloudiness vs Latitude.
+                        </li>
+                        <li>
+                            The maximum temperature of cities in the Northern hemisphere show a strong negative
+                            correlation with Latitude as compared to cities in Southern hemisphere, which shows a weak
+                            correlation. A possible reasoning is that there are far less habitable locations close to
+                            the South Pole.
+                        </li>
+                    </ul>
+                </p>
+                <a class="btn btn-primary btn-sm" href="https://github.com/nqazimn/python-api-challenge.git"
+                    role="button" target="_blank">Learn more on GitHub</a>
+            </div>
+            <!--jumobtron ends here-->
+
+        </div>
+        <!-- project_intro ends here-->
+
+        <div class="container_left col-md-6" id="project_intro">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card border-0">
+                        <img class="card-img-top" src="../assets/temperature_emoji.png" alt="temperature_emoji"
+                            id="temperature_emoji">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title text-muted">Temperature</h4>
+                            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                            <p class="card-text">
+                                The maximum temperature decreases as distance from the equator increases.
+                            </p>
+                            <a href="temperature_vs_latitude.html" class="card-link">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Temparature card ends here-->
+
+                <div class="col-md-6">
+                    <div class="card border-0">
+                        <img class="card-img-top" src="../assets/humidity_emoji.jpg" alt="humidity_emoji"
+                            id="humidity_emoji">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title text-muted">Humidity</h4>
+                            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                            <p class="card-text">
+                                No observable correlation found. Humidity does not vary as Latitude varies.
+                            </p>
+                            <a href="humidity_vs_latitude.html" class="card-link">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!--humidity card ends here-->
+            </div>
+            <!--Temperature/Humidity cards end here-->
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card border-0">
+                        <img class="card-img-top" src="../assets/cloudiness_emoji.png" alt="Card image cap"
+                            id="cloudiness_emoji">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title text-muted">Cloudiness</h4>
+                            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                            <p class="card-text">
+                                No observable correlation found. Cloudiness does not vary as Latitude varies.
+                            </p>
+                            <a href="cloudiness_vs_latitude.html" class="card-link">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card border-0">
+                        <img class="card-img-top" src="../assets/wind_speed_emoji.png" alt="Card image cap"
+                            id="windspeed_emoji">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title text-muted">Wind-speed</h4>
+                            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                            <p class="card-text ">
+                                No observable correlation found. Wind-speed is not correlated with Latitude.
+                            </p>
+                            <a href="windspeed_vs_latitude.html" class="card-link">Details</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--Cloudiness/Wind-speed cards end here-->
+
+
+
+
+        </div>
+        <!--project_intro/cards ends here-->
+
+    </div>
+    <!--Parent-container ends here-->
+
+</body>
+
+</html>

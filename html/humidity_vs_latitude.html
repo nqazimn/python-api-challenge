@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Weather vs. Latitude</title>
+
+    <!-- Bring in our bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+
+<body>
+    <div class="parent-container-navbar" id="navbar_container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../index.html">
+                <h5>Weather vs. Latitude</h5>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Home button ends here-->
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Visualizations
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Maximum Temperature</a>
+                            <a class="dropdown-item" href="#">Humidity</a>
+                            <a class="dropdown-item" href="#">Cloudiness</a>
+                            <a class="dropdown-item" href="#">Wind-speed</a>
+                        </div>
+
+                    </li> -->
+                    <!-- DROP DOWN MENU IS NOT WORKING - ADDING PAGES SEPARATELY-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="temperature_vs_latitude.html">Maximum Temperature</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="humidity_vs_latitude.html">Humidity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cloudiness_vs_latitude.html">Cloudiness</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="windspeed_vs_latitude.html">Wind-speed</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparison.html">Comparison</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <!--Navigation bar ends here-->
+
+    </div> <!-- Navbar container ends here-->
+
+    <div class="parent-container d-flex">
+        <div class="container_left col-md-12" id="plot_summary">
+            <h2>Humidity vs. Latitude</h2>
+            <div class="row">
+                <div class="col-md-5">
+                    <img class="visuals" src="../visualizations/2.Variation_of_humidity_with_latitude.png"
+                        alt="plot_of_temperature_vs_latitude">
+                </div>
+
+                <div class="col-md-6 plot_explanation">
+                    <p align="justify">
+                        In the polar regions, temperatures are low, dew point temperatures are also low, and relative
+                        humidity is high. The air in polar regions is usually around 80% saturated. Even though the
+                        water vapor content of the air is low, the water vapor capacity is low as well. Saturation
+                        occurs in air that holds very little water vapor even when the air is relatively dry. As a
+                        consequence, the relative humidity is higher at polar regions than at 30&deg latitude, while the
+                        specific humidity is higher at 30&deg than at polar regions.
+
+                    </p>
+                    <p align="justify">
+                        Not all regions of the earth
+                        around
+                        30&deg latitude are desert. As one traverses 30&deg of latitude across the continental United
+                        States,
+                        one notices a distinct difference between the climate of Arizona and that of Alabama. The air
+                        masses that prevail over the western deserts of the U.S. come from the Pacific Ocean. The
+                        Pacific Ocean is normally very cool. Air over the Pacific is also cool. As westerly winds move
+                        this air over land, its temperature increases but its water vapor content does not. Hence the
+                        air over the western deserts has a high temperature but a low dew point and very low relative
+                        humidity. The Gulf of Mexico, on the other hand, is quite a bit warmer as is the air over it.
+                        When this air moves over the southeastern U.S. it warms only a little while maintaining the same
+                        water vapor content. The air and dew point temperatures are very close and the relative humidity
+                        is consequently quite high. This is why the southwest U.S. is normally hot and dry while the
+                        southeast is hot and muggy <cite><a
+                                href="https://digitalatlas.cose.isu.edu/clima/imaging/humid.htm"
+                                target="_blank">[3]</a></cite>.
+                    </p>
+
+
+
+                </div>
+
+            </div>
+        </div>
+        <!-- <div class="container_right col-md-6" id="plot_summary">
+
+        </div> -->
+
+
+
+    </div>
+
+</body>
+
+</html>

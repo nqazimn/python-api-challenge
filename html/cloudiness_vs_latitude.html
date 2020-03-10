@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Weather vs. Latitude</title>
+
+    <!-- Bring in our bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+
+<body>
+    <div class="parent-container-navbar" id="navbar_container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../index.html">
+                <h5>Weather vs. Latitude</h5>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Home button ends here-->
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Visualizations
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Maximum Temperature</a>
+                            <a class="dropdown-item" href="#">Humidity</a>
+                            <a class="dropdown-item" href="#">Cloudiness</a>
+                            <a class="dropdown-item" href="#">Wind-speed</a>
+                        </div>
+
+                    </li> -->
+                    <!-- DROP DOWN MENU IS NOT WORKING - ADDING PAGES SEPARATELY-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="temperature_vs_latitude.html">Maximum Temperature</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="humidity_vs_latitude.html">Humidity</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="cloudiness_vs_latitude.html">Cloudiness</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="windspeed_vs_latitude.html">Wind-speed</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparison.html">Comparison</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <!--Navigation bar ends here-->
+
+    </div> <!-- Navbar container ends here-->
+
+    <div class="parent-container d-flex">
+        <div class="container_left col-md-12" id="plot_summary">
+            <h2>Cloudiness vs. Latitude</h2>
+            <div class="row">
+                <div class="col-md-5">
+                    <img class="visuals" src="../visualizations/3.Variation_of_cloudiness_with_latitude.png"
+                        alt="plot_of_temperature_vs_latitude">
+                </div>
+
+                <div class="col-md-6 plot_explanation">
+                    <p align="justify">
+                        Our analysis indicates there is no correlation between humidity and latitude. Some excerpts from
+                        NASA about
+                        <a href="https://earthobservatory.nasa.gov/images/85843/cloudy-earth" target="_blank">Cloudy
+                            Earth</a> is
+                        included below.
+                    </p>
+                    <p align="justify">
+                        There are three broad bands where Earth’s skies are most likely to be cloudy: a narrow strip
+                        near the equator and two wider strips in the mid-latitudes. The band near the equator is a
+                        function of the large scale circulation patterns—or Hadley cells—present in the tropics. Hadley
+                        cells are defined by cool air sinking near the 30 degree latitude line north and south of the
+                        equator and warm air rising near the equator where winds from separate Hadley cells converge.
+                        As warm,
+                        moist air converges at lower altitudes near the equator, it rises and cools and therefore can
+                        hold less moisture. This causes water vapor to condense into cloud particles and produces a
+                        dependable band of thunderstorms in an area known as the Inter Tropical Convergence Zone (ITCZ)
+                        <cite><a href="#">[4]</a></cite>.
+                    </p>
+                    <p align="justify">
+                        Clouds also tend to form in abundance in the middle latitudes 60 degrees north and south of the
+                        equator. This is where the edges of polar and mid-latitude (or Ferrel) circulation cells collide
+                        and push air upward, fueling the formation of the large-scale frontal systems that dominate
+                        weather patterns in the mid-latitudes. While clouds tend to form where air rises as part of
+                        atmospheric circulation patterns, descending air inhibits cloud formation. Since air descends
+                        between about 15 and 30 degrees north and south of the equator, clouds are rare and deserts are
+                        common at this latitude.
+                    </p>
+
+
+                </div>
+
+            </div>
+        </div>
+        <!-- <div class="container_right col-md-6" id="plot_summary">
+
+        </div> -->
+
+
+
+    </div>
+
+</body>
+
+</html>
